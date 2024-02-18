@@ -10,7 +10,6 @@
         "custom/launch_wofi",
         "hyprland/workspaces",
         "custom/lock_screen",
-        "custom/power_btn",
         "wlr/taskbar",
     ],
 
@@ -42,7 +41,7 @@
 
     "custom/launch_wofi": {
         "format": "",
-        "on-click": "sh -c '( pkill wofi || wofi -show drun)' & disown",
+        "on-click": "sh -c '( pkill wofi || wofi  drun)' & disown",
         "tooltip": false
     },
 
