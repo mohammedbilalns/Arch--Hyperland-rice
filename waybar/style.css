@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background : transparent;
     color: #eeeeee;
 }
 
@@ -20,7 +20,10 @@ tooltip {
     border-style: solid;
     border-color: #11111b;
 }
+network {
+   color: #BEB492;
 
+}
 tooltip label{
     color: #eeeeee;
 }
@@ -53,7 +56,7 @@ tooltip label{
     border-radius: 10px;
 }
 
-
+#custom-launch_wofi
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
@@ -74,20 +77,22 @@ tooltip label{
 #temperature,
 #workspaces,
 #backlight {
-    background: #111111;
-    opacity: 0.8;
+    background: #000000;
+    opacity: 1;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 5px;
     border: 0px;
 }
 
-#tray, #custom-lock_screen, #temperature,#memory , #cpu , #network,#backlight {
+#tray, #temperature,#memory , #cpu , #network,#backlight {
     border-radius: 10px 0px 0px 10px;
 }
 
-
-#workspaces, #taskbar{
+#workspaces {
+margin-left: 10px;
+}
+#custom-lock_screen,#workspaces, #taskbar{
    border-radius: 10px 10px 10px 10px;
    margin-right: 10px;
 }
@@ -97,13 +102,9 @@ tooltip label{
 }
 
 #custom-launch_wofi {
-    border-radius:10px 10px 10px 10px ;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
-    
-    
-
+    color: #40A2E3;
+    margin-left: 5px;
+    border-right: 0px;
 }
 
 #temperature.critical {
@@ -147,7 +148,7 @@ tooltip label{
 }
 
 #battery {
-    color: #65B741;
+    color: #579835;
     border-left: 0px;
 }
 
