@@ -1,14 +1,14 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
+    font-family: "Cousine Nerd Font";
     font-size: 16px;
+    font-weight: bold ;
     min-height: 0;
 }
 
 window#waybar {
-    background : transparent;
+ background-color : #000000;
     color: #eeeeee;
 }
 
@@ -78,15 +78,23 @@ tooltip label{
 #workspaces,
 #backlight {
     background: #000000;
-    opacity: 1;
+     opacity: 1;
     padding: 0px 10px;
     margin: 3px 0px;
-    margin-top: 5px;
+    margin-top: 1px;
     border: 0px;
 }
 
-#tray, #temperature,#memory , #cpu , #network,#backlight {
-    border-radius: 10px 0px 0px 10px;
+#tray,#workspaces,#taskbar,#network,#idle_inhibitor.enabled,#idle_inhibitor.disabled,#clock{
+	border-radius: 10px
+}
+
+#backlight {
+    border-radius: 0px 0px 0px 0px;
+  padding: 0px; 
+  margin-right : 5px;
+  margin-left : 5px;
+    
 }
 
 #workspaces {
@@ -96,16 +104,9 @@ margin-left: 10px;
    border-radius: 10px 10px 10px 10px;
    margin-right: 10px;
 }
-#custom-light_dark, #custom-power_btn,#clock, #pulseaudio.microphone, #battery, #disk,#pulseaudio {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
 
-#custom-launch_wofi {
-    color: #40A2E3;
-    margin-left: 5px;
-    border-right: 0px;
-}
+
+
 
 #temperature.critical {
     color: #e92d4d;
@@ -129,16 +130,13 @@ margin-left: 10px;
     margin-right: 20px;
 }
 
-#custom-launch_wofi {
-    color: #40A2E3;
-    margin-left: 5px;
-    border-right: 0px;
-}
+
 
 #pulseaudio {
     color: #40a2e3;
-    border-left: 0px;
-    border-right: 0px;
+    border-radius : 10px 0px 0px 10px;
+    margin-right : 5px;
+
 }
 
 #pulseaudio.microphone {
@@ -148,9 +146,13 @@ margin-left: 10px;
 }
 
 #battery {
-    color: #579835;
-    border-left: 0px;
+	color: #579835;
+	border-left: 0px;
+	border-radius: 0px 10px 10px 0px;
+	margin-right: 10px;
 }
+
+ 
 
 #taskbar button:hover{
     background: #000000;
