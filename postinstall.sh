@@ -12,7 +12,7 @@ fi
  
 # list of applications
 apps=("$@")
-predefined_apps=( "xdg-user-dirs" "selectdefaultapplication-git" "nemo" "nemo-fileroller" "floorp-bin" "telegram-desktop" "zathura" "atuin" "zathura-pdf-poppler" "firefox" "ntfs-3g"  "nwg-look" "texlive" "zsh" "xdg-usr-dirs" "neofetch" "htop" "bat" "yazi" "zathura" "zathura-pdf-poppler" "qbitorrent" "gnome-disk-utility" "pipewire" "pipewire-alsa" "pipewire-pulse" "pipewire-media-session" "pipewire-jack"  "gwenview" "bluez" "bluez-utils" "npm" "rnote-bin" "neovim" "python-pynvim" "sassc" "gnome-keyring" "gtk-engine-murrine" "sassc""gnome-themes-extra" "tree-sitter-cli" "papirus-icon-theme" "github-desktop-bin" "pamac-aur" "tlp" "tlp-rdw" "joplin-bin"  )
+predefined_apps=( "powertop" "qt6ct" "xdg-user-dirs" "selectdefaultapplication-git" "nemo" "nemo-fileroller" "floorp-bin" "telegram-desktop" "zathura" "atuin" "zathura-pdf-poppler" "firefox" "ntfs-3g"  "nwg-look" "texlive" "zsh" "xdg-usr-dirs" "neofetch" "htop" "bat" "yazi" "zathura" "zathura-pdf-poppler" "qbitorrent" "gnome-disk-utility" "pipewire" "pipewire-alsa" "pipewire-pulse" "pipewire-media-session" "pipewire-jack"  "gwenview" "bluez" "bluez-utils" "npm" "rnote-bin" "neovim" "python-pynvim" "sassc" "gnome-keyring" "gtk-engine-murrine" "sassc""gnome-themes-extra" "tree-sitter-cli" "papirus-icon-theme" "github-desktop-bin" "pamac-aur" "tlp" "tlp-rdw" "joplin-bin"  )
 
 sddm_configuration=("qt6-declarative" "qt6-svg" "sddm" "qt5-quick-controls" "qt5-quickcontrols2" "qt5-graphicaleffects" "sddm-conf-git"  )
 
