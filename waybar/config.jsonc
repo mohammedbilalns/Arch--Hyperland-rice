@@ -15,13 +15,20 @@
     ],
     "modules-right": [
 
-        "idle_inhibitor",
 	"network",
+	"custom/screenshot",
         "pulseaudio",
         "backlight",
         "battery",
         "tray"
     ],
+    "custom/screenshot" :{
+	    "format" : "󰄄",
+	    "on-click" : "hyprshot -m region",
+	    "tooltip-format" : "{Screenshot a region}"
+
+
+    },
    
     
      "idle_inhibitor": {
