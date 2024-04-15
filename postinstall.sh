@@ -29,7 +29,7 @@ if [[ $response =~ ^[Yy][Ee][Ss]$ ]] || [[ $response =~ ^[Yy]$ ]]
 then 
 	apps+=("${sddm_configuration[@]}")
 	echo "copying sddm theme"
-	sudo cp -r Arch--Hyperland-rice/sddm /usr/share/sddm/themes/
+	sudo cp -r Arch--Hyperland-rice/sddm/* /usr/share/sddm/themes/
 	sddm_check=1
 elif [[ $response =~ ^[Nn][Oo]$ ]] || [[ $response =~ ^[Nn]$ ]]
 then
