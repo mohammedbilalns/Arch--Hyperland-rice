@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     font-family: "Cousine Nerd Font";
     font-size: 16px;
     font-weight: bold ;
@@ -21,7 +21,7 @@ tooltip {
     border-color: #11111b;
 }
 network {
-   color: #BEB492;
+   color: #eeeeee;
 
 }
 tooltip label{
@@ -61,7 +61,6 @@ tooltip label{
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
-#custom-power_profile,
 #battery,
 #custom-weather,
 #custom-myhyprv,
@@ -81,28 +80,24 @@ tooltip label{
     background: #000000;
      opacity: 1;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 1px;
+    margin: 1px 0px;
     border: 0px;
 }
 
-#tray,#workspaces,#taskbar,#network,#idle_inhibitor.enabled,#idle_inhibitor.disabled,#clock{
-	border-radius: 10px
+#pulseaudio,#backlight,#memory ,#tray,#network{
+	border-radius : 0 ;
+}
+#cpu,#custom-screenshot, #workspaces{
+	border-radius : 10px 0 0 10px; 
+}
+#battery, #taskbar,#clock{
+	border-radius : 0 10px 10px 0;
 }
 
-#backlight {
-    border-radius: 0px 0px 0px 0px;
-  padding: 0px; 
-  margin-right : 5px;
-  margin-left : 5px;
-    
-}
-
-#workspaces {
+#workspaces,#custom-screenshot {
 margin-left: 10px;
 }
-#custom-lock_screen,#workspaces, #taskbar{
-   border-radius: 10px 10px 10px 10px;
+#custom-lock_screen, #clock{
    margin-right: 10px;
 }
 
@@ -127,16 +122,12 @@ margin-left: 10px;
 
 #window {
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 
 
 #pulseaudio {
-    color: #40a2e3;
-    border-radius : 10px 0px 0px 10px;
-    margin-right : 5px;
+    color: #ffbb30;
 
 }
 
@@ -147,10 +138,8 @@ margin-left: 10px;
 }
 
 #battery {
-	color: #579835;
+	color: #43af1c;
 	border-left: 0px;
-	border-radius: 0px 10px 10px 0px;
-	margin-right: 10px;
 }
 
  

@@ -3,7 +3,7 @@
      "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -11,16 +11,17 @@
         
     ],
     "modules-center": [
-        "clock"
     ],
     "modules-right": [
 
+
 	"network",
-	"custom/screenshot",
         "pulseaudio",
         "backlight",
         "battery",
-        "tray"
+	"custom/screenshot",
+        "tray",
+	"clock"
     ],
     "custom/screenshot" :{
 	    "format" : "󰄄",
@@ -75,8 +76,8 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}%",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -86,7 +87,7 @@
         "network": {
 		"interval": 1,
 		"format": "{ifname}",
-		"format-wifi": "{icon}  {bandwidthDownBytes}  {bandwidthUpBytes} ",
+		"format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
 		"format-ethernet": "{icon} {bandwidthDownBytes}  {bandwidthUpBytes} ",
 		"format-disconnected": "󰌙",
 		"tooltip-format": "{ipaddr}",
@@ -98,11 +99,11 @@
 		"format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
  
     },
-       
+      
 
 
       "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}   {volume}%",
         "format-muted": "",
         "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
         "on-click-right": "pavucontrol",
