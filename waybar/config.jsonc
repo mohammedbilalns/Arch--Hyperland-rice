@@ -30,16 +30,32 @@
 
 
     },
-   
-    
-     "idle_inhibitor": {
+    "hyprland/workspaces": {
+        "disable-scroll": true,
         "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 5,
+        },
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
+            "1": "Files",
+            "2": "TeX",
+            "3": "Rnote",
+            "4": "Video",
+            "5": "Browser",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        },
     },
-    "tray": {
+
+
+  
+       "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
