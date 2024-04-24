@@ -17,12 +17,12 @@ then
 	sed -i 's/workspace = 1, on-created-empty: nemo//g' $hyprland_config
 	sed -i 's/workspace = 2, on-created-empty: foot nvim//g' $hyprland_config
 	sed -i 's/workspace = 3, on-created-empty: rnote//g' $hyprland_config
-	sed -i 's/workspace = 4/workspace = 2/g' $hyprland_config
+	sed -i 's/workworspace = 4/workspace = 2/g' $hyprland_config
 	sed -i 's/workspace = 5/workspace = 1/g' $hyprland_config
 	sed -i 's/workspace = 6/workspace = 3/g' $hyprland_config
 	
-	echo "ivide ok"
-	killall waybar && waybar  	
+	killall waybar && waybar  
+	notify-send "Profile switched to coding"
  
 fi
 
@@ -48,7 +48,8 @@ then
 	sed -i '/workspace = 1, on-created-empty: nemo/a\     workspace = 2, on-created-empty: foot nvim' $hyprland_config
 	sed -i '/workspace = 2, on-created-empty: foot nvim/a\     workspace = 3, on-created-empty: rnote' $hyprland_config
 
-
+	
+	notify-send "Profile switched to Net"
 
 
 	killall waybar && waybar
