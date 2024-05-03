@@ -32,7 +32,6 @@ function handle {
                 fi
             done
         fi
-
     elif [[ ${1:0:10} == "movewindow"  ]]
     then
         window_id=$(echo $1 | cut --delimiter ">" --fields=3 | cut --delimiter "," --fields=1)
