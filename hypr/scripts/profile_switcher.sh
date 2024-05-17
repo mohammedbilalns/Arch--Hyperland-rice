@@ -21,8 +21,7 @@ then
 	sed -i 's/workspace = 5/workspace = 1/g' $hyprland_config
 	sed -i 's/workspace = 6/workspace = 3/g' $hyprland_config
 	
-	killall waybar && waybar  
-	notify-send "Profile switched to coding"
+	killall waybar && waybar  & notify-send "Profile switched to coding"
  
 fi
 
@@ -33,7 +32,8 @@ then
 	sed -i 's/codingprof/Net/g' $hyprland_config
 	sed -i 's/Browser/Files/g' $waybar_config
 	sed -i 's/Youtube/TeX/g' $waybar_config
-	sed -i 's/ChatGPT/Rnote/g' $waybar_config
+	sed -i 's/ChatGPT/Rnote/g' $waybar_config:q
+
 	sed -i '/"3": "Rnote",/a\    "4": "Video",' $waybar_config
 	sed -i '/"4": "Video",/a\    "5": "Browser",' $waybar_config
 	sed -i '/"5": "Browser",/a\   "6": "ChatGPT",' $waybar_config

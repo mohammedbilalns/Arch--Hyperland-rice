@@ -2,7 +2,7 @@
 
 if pgrep hypridle 
 then
-	killall hypridle 
+	killall hypridle & notify-send "Idle inhibitor is active"
 else 
-	hypridle 
+	hypridle & notify-send "Idle inhibitor deactivated"
 fi

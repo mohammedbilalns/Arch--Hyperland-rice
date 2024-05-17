@@ -14,19 +14,16 @@ if grep -q  "default" "$workspace_config"
 then
 	cp $workspace_profile_coding $workspace_config
 	cp $waybar_profile_coding $waybar_config
-	killall waybar && waybar
-	notify-send "Switched to Coding"
+	killall waybar && waybar &	notify-send "Switched to Coding"
 elif  grep -q  "codingprof" "$workspace_config" 
 then
 	cp $workspace_profile_net $workspace_config
 	cp $waybar_profile_net $waybar_config
-	killall waybar && waybar
-	notify-send "Switched to Net"
+	killall waybar && waybar &	notify-send "Switched to Net"
 elif grep -q "Net" "$workspace_config"
 then
 	cp $workspace_profile_default $workspace_config
 	cp $waybar_profile_default $waybar_config
-	killall waybar && waybar
-	notify-send "Switched to Default"
+	killall waybar && waybar & notify-send "Switched to Default"
 
 fi
