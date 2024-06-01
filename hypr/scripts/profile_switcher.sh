@@ -1,12 +1,12 @@
 #!/usr/bin/env sh 
-waybar_config=$HOME/.config/waybar/config.jsonc
-hyprland_config=$HOME/.config/hypr/hyprland.conf
+waybar_config=$HOME/dotfiles/.config/waybar/config.jsonc
+hyprland_config=$HOME/dotfiles/.config/hypr/hyprland.conf
 
 if grep -q  "Net" "$hyprland_config" 
 then
 	#Replacing waybar config 
 	sed -i 's/Files/Browser/g' $waybar_config
-	sed -i 's/TeX/Youtube/g' $waybar_config
+	sed -i 's/TeX/Youtube/g' $w:aybar_config
 	sed -i 's/Rnote/ChatGPT/g' $waybar_config
 	sed -i 's/"4": "Video",//g' $waybar_config
 	sed -i 's/"5": "Browser",//g' $waybar_config

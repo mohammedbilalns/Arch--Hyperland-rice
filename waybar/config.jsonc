@@ -25,7 +25,7 @@
     ],
     "custom/screenshot" :{
 	    "format" : "󰄄",
-	    "on-click" : "hyprshot -m region",
+	    "on-click" : "grimshot save output && notify-send 'Screenshot Saved'",
 	    "tooltip-format" : "{Screenshot a region}"
 
 
@@ -39,10 +39,24 @@
         "format-icons": {
             "1": "Files",
             "2": "TeX",
-            "3": "Rnote",
-            "4": "Video",
-            "5": "Browser",
-            "6": "ChatGPT",
+            "3": "Joplin",
+    "4": "Video",
+    "5": "Browser",
+   "6": "ChatGPT",
+    
+    
+   
+    
+    
+   
+    
+    
+   
+    
+    
+    
+            
+            
             "urgent": "",
             "focused": "",
             "default": ""
@@ -117,10 +131,10 @@
       "pulseaudio": {
         "format": "{icon}   {volume}%",
         "format-muted": "",
-        "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
+        "on-click": "~/.config/waybar/volume --toggle",
         "on-click-right": "pavucontrol",
-        "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --inc",
-        "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --dec",
+        "on-scroll-up": "~/.config/waybar/volume --inc",
+        "on-scroll-down": "~/.config/waybar/volume --dec",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
