@@ -23,8 +23,7 @@ set $github  github-desktop --enable-features=UseOzonePlatform --ozone-platform=
 
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu pkill wofi || wofi drun
-
+bindsym --no-repeat --release Super_L exec pkill wofi || wofi drun
 
 
 ### Appearance
@@ -107,7 +106,7 @@ default_border pixel 1
 	bindsym $mod+alt+j joplin-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland            
  
     # Start your launcher
-    bindsym  $mod+d $menu
+    bindsym  $mod+d exec pkill wofi || wofi drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -257,4 +256,12 @@ bar swaybar_command waybarsway
 
 include /etc/sway/config.d/*
 
-exec blueman-applet & nm-applet & mako & exec-once = /usr/lib/xfce-polkit/xfce-polkit
+exec blueman-applet & nm-applet & mako & /usr/lib/xfce-polkit/xfce-polkit
+
+	for_window [app_id="xfce-polkit"] floating enable
+	for_window [app_id="tlp-ui"] floating enable
+	for_window [title="Bluetooth Devices"] floating enable 
+		for_window [title="^Open File$"] floating enable
+	for_window [window_role="GtkFileChooserDialog"] resize set 800 600
+		for_window [window_role="GtkFiileChooserDialog"] move position center
+
