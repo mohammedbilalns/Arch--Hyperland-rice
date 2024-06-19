@@ -34,14 +34,14 @@ printing=( "cups" "cups-pdf" "canon-pixma-ts5055-complete")
 apps+=("${predefined_apps[@]}")
 
 
-git clone https://github.com/mohammedbilalns/Arch--Hyperland-rice.git
+git clone https://github.com/mohammedbilalns/Arch-Configuration-old.git
 echo -n "Do you want to install sddm configurations? (yes/no)"
 read response
 if [[ $response =~ ^[Yy][Ee][Ss]$ ]] || [[ $response =~ ^[Yy]$ ]]
 then 
 	apps+=("${sddm_configuration[@]}")
 	echo "copying sddm theme"
-	sudo cp -r Arch--Hyperland-rice/sddm/* /usr/share/sddm/themes/
+	sudo cp -r Arch-Configuration-old/sddm/* /usr/share/sddm/themes/
 	sddm_check=1
 elif [[ $response =~ ^[Nn][Oo]$ ]] || [[ $response =~ ^[Nn]$ ]]
 then
@@ -56,7 +56,7 @@ if [[ $response =~ ^[Yy][Ee][Ss]$ ]] || [[ $response =~ ^[Yy]$ ]]
 then 
 	apps+=("${hyprland_packages[@]}")
 	echo "copying hyprland configurations... "
-	cp -r  Arch--Hyperland-rice/* $HOME/.config/
+	cp -r  Arch-Configuration-old/* $HOME/.config/
 
 elif [[ $response =~ ^[Nn][Oo]$ ]] || [[ $response =~ ^[Nn]$ ]]
 then
